@@ -1,0 +1,11 @@
+def transpose(matrix: list):
+    transposed = [] 
+    #create a n of rows = lenght of col 
+    for r in range(len(matrix[0])):
+        new_row = []
+        #for each new row add numbers from the same index as the row
+        for c in range(len(matrix)):
+            new_row.append(matrix[c][r])
+        transposed.append(new_row)
+    matrix.clear()
+    matrix.extend(transposed)
