@@ -1,0 +1,7 @@
+def invert(dictionary: dict):
+    swapped = {}
+    for key, value in dictionary.items():
+        swapped[value] = key
+    dictionary.clear()
+    for new_key, new_value in swapped.items():
+        dictionary[new_key] = new_value
