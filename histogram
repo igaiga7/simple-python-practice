@@ -1,0 +1,7 @@
+def histogram(word:str):
+    hist = {}
+    for letter in word:
+        number = word.count(letter)
+        hist[letter] = number * "*"
+    for key in hist:
+        print(f"{key} {hist[key]}")
