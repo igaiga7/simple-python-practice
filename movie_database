@@ -6,3 +6,10 @@ def add_movie(database: list, name: str, director: str, year: int, runtime: int)
     movie_list["runtime"] = runtime
 
     database.append(movie_list)
+
+def find_movies(database: list, search_term: str):
+    results = []
+    for movie in database:
+        if search_term.lower() in movie["name"].lower():
+            results.append(movie)
+    return(results)
