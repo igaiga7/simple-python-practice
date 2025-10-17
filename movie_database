@@ -1,0 +1,8 @@
+def add_movie(database: list, name: str, director: str, year: int, runtime: int):
+    movie_list = {}
+    movie_list["name"] = name
+    movie_list["director"] = director
+    movie_list["year"] = year
+    movie_list["runtime"] = runtime
+
+    database.append(movie_list)
